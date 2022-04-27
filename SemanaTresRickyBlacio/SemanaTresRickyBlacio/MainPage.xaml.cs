@@ -15,12 +15,21 @@ namespace SemanaTresRickyBlacio
             InitializeComponent();
         }
 
-        private async void btnAbrir_Clicked(object sender, EventArgs e)
+        
+        private async void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            string usuario = txtUsuario.Text;
-            string pass = txtPass.Text;
+            string usuario = TxtUsuario.Text;
+            string pass = TxtPass.Text;
+            if (usuario == "estudiante2022" && pass == "uisrael2022")
+            {
+                await Navigation.PushAsync(new page2());
 
-            await Navigation.PushAsync(new page2(usuario,pass));
+            }
+            else
+            {
+                await DisplayAlert("ERROR", "USUARIO Y/O PASSWORD INCORRECTOS", "Cerrar");
+            }
+
         }
     }
 }

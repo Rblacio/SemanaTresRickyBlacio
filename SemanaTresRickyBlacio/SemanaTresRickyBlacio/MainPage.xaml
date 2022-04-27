@@ -4,15 +4,21 @@
              x:Class="SemanaTresRickyBlacio.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
 
-        <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
-        <Entry x:Name="txtPass" Placeholder="Ingrese la contrasena" IsPassword="True"/>
         
-        <Button x:Name="btnAbrir" Text="Abrir ventana dos" Clicked="btnAbrir_Clicked"/>
+            <Frame BackgroundColor="Tomato" Padding="30" CornerRadius="0">
+            <Label Text="Tarea Desarrollo Semana III" HorizontalTextAlignment="Center" TextColor="White" FontSize="40"/>
+        </Frame>
         
+        
+        <Entry x:Name="TxtUsuario" Placeholder="Ingrese Usuario"/>
+        <Entry x:Name="TxtPass" Placeholder="Ingrese Contraseña" IsPassword="True"/>
+        <Button x:Name="BtnLogin" Text="ACCEDER" Clicked="BtnLogin_Clicked"/>
+
+        <Label Text="@BlacioCenter" HorizontalTextAlignment="Start" TextColor="Gold" FontSize="20"/>
+
+
+
     </StackLayout>
 
 </ContentPage>
